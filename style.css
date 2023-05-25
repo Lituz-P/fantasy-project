@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.line{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    height: 2px;
+    margin-top: 3px;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: xx-large;
+    color: greenyellow;
+}
+
+.library{
+    
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom left, #000000, #222222, #444444);
+}
+
+.novels{
+    
+    width: 20%;
+    height: 30%;
+    color: white;
+    background-color: #1c1c1c;
+    border: 5px solid greenyellow;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    font-size: larger;
+    transition: all 0.3s ease;
+}
+
+.novels:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 30px green;
+    display: block;
+}
+
+.modal-container {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 0;
+    background-color: rgb(30, 30, 30);
+    overflow: hidden;
+    transition: height 0.3s, width 0.3s;
+  }
+  
+  .modal-content {
+    width: 70%;
+    height: 80%;
+    background-color: rgb(30, 30, 30);
+    border: 10px solid greenyellow;
+    box-shadow: 0 0 30px green;
+    border-radius: 20%;
+    /* Estilos adicionais para o conteúdo do modal */
+  }
+  
+  #close-modal {
+    display: none;
+    position: relative;
+    z-index: 5;
+    float: right;
+    top: -15px;
+    right: -15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    color: #f1f1f1;
+  }
+
+  #close-modal:hover{
+    box-shadow: 0 0 30px rgb(159, 16, 0);
+  }
+  
+  .modal-container.open {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .modal-container.open #close-modal {
+    display: block;
+  }
+
+.novel-data{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.synopsis{
+    width: 50%;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.synopsis span{
+    color: #f1f1f1;
+    font-size: 20px;
+    
+    text-align: justify;
+}
+
+.novel-preview{
+    width: 50%;
+    height: 100%;
+    overflow: hidden
+}
+
+.novel-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-play{
+    width: 100px;
+    height: 60px;
+    border-radius: 20%;
+    border: 5px solid greenyellow;
+    background-color: greenyellow;
+    color: #f1f1f1;
+}
+
+.btn-play:hover{
+    box-shadow: 0 0 30px green;
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+}
+
+
+/* tags ------------------------------------------------------------------------ */
+
+.tags{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.tag-teen{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(250, 172, 185);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-milf{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(221, 15, 50);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-mff{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(71, 135, 208);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-fmm{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(71, 135, 208);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-humiliation{
+    width: 100px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-submission{
+    width: 90px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-bdsm{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-pregnancy{
+    width: 80px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-piss{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(250, 255, 157);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-trans{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(154, 65, 255);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-zoo{
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(64, 255, 80);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-exibicionism{
+    width: 100px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: rgb(235, 88, 52);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
